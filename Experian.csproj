@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Refit" Version="6.3.2" />
+        <PackageReference Include="Refit.HttpClientFactory" Version="6.3.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="ExperianTest\obj\ExperianTest.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="ExperianTest\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="ExperianTest\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="Test\ExperianTest\obj\ExperianTest.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="Test\ExperianTest\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Test\ExperianTest\obj\project.packagespec.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Test\**" />
+    </ItemGroup>
+
+</Project>
